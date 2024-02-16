@@ -1,0 +1,53 @@
+.actionPanel {
+  position: absolute;
+  height: 100%;
+  width: 408px;
+  background-color: #fff;
+  z-index: 3;
+
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  opacity: 1;
+  top: 0;
+  left: 0;
+
+  transform: translateX(0px);
+  transition-property: -webkit-transform, transform, opacity;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0, 0, 0.2, 1);
+
+  display: flex;
+  flex-direction: column;
+}
+
+.actionPanelClosed {
+  transform: translateX(-408px);
+  box-shadow: none;
+}
+
+.toggleButtonContainer {
+  position: absolute;
+  z-index: 0;
+  top: 8px;
+  left: 100%;
+}
+
+.toggleButton {
+  width: 23px;
+  height: 48px;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.9)
+    url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAUCAQAAAAXDMSnAAAAi0lEQVR4AX3JQcqBURQG4O/+9WNG30D3vOfSDTuQsgcZyBakZANSzMVMBme3zsBI5/VMn4ZKLP5ki1E4tYejWpilxVUtzOEUD68odYmXR5BJNp/4zllXD2phllYvamHmirsayUkfJ5ruHzueTldC08kcT5YOY9xYujqQM03XKXuaLmEtNF1e1Nz89gbL+0do6OEwRwAAAABJRU5ErkJggg==)
+    7px center/7px 10px no-repeat;
+  border-left: 1px solid #d4d4d4;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.3);
+
+  border: 0;
+  border-radius: 0;
+  font: inherit;
+  list-style: none;
+  margin: 0;
+  outline: 0;
+  overflow: visible;
+  padding: 0;
+  vertical-align: baseline;
+}

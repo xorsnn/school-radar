@@ -1,0 +1,15 @@
+.root {
+  padding: 8px;
+  display: flex;
+  flex-grow: 0;
+  flex-shrink: 1;
+  flex-basis: auto;
+  width: 100%;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+.grow {
+  flex-grow: 1;
+  overflow: auto;
+}

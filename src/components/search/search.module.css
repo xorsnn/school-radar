@@ -1,0 +1,8 @@
+.search {
+  display: flex;
+  flex: 1 1 auto;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  flex-direction: column;
+}

@@ -1,0 +1,14 @@
+.root {
+  padding: 2px 4px;
+  display: flex;
+  flex: 0 0 auto;
+}
+
+.input {
+  flex: 1;
+  margin-left: 12px;
+}
+
+.icon-button {
+  padding: 10;
+}
