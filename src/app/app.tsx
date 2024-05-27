@@ -8,6 +8,10 @@ import { SearchConfigState, initCfg } from "utils/search_config_presenter";
 import { searchSchools } from "services/api";
 import { School } from "services/school";
 import { observable, IObservableValue, autorun, runInAction } from "mobx";
+import Link from "next/link";
+import IconButton from "@mui/material/IconButton";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import Typography from "@mui/material/Typography";
 
 type Props = object;
 type State = {
@@ -45,6 +49,20 @@ export class App extends React.Component<Props, State> {
           schoolsList={this.schoolsList}
           searchConfigRef={this.searchConfigRef}
         />
+        <Link href="https://github.com/xorsnn/school-radar" passHref>
+          <IconButton
+            sx={{
+              position: "fixed",
+              top: 16, // adjust as needed
+              right: 16, // adjust as needed
+            }}
+          >
+            <GitHubIcon />
+            <Typography variant="body1">
+              This is an open-source project. Contribute on GitHub!
+            </Typography>
+          </IconButton>
+        </Link>
       </>
     );
   }
